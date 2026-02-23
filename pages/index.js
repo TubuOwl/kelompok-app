@@ -214,10 +214,7 @@ export default function Home() {
 
       <div className="container">
         <header>
-          <h1>
-            <i className="fas fa-users"></i> Daftar Kelompok Organisasi & Kepemimpinan <br />
-            oleh Rombel 3 PPKN 2024
-          </h1>
+          <h1><i className="fas fa-users"></i> Daftar Kelompok Rom3</h1>
           <p style={{ marginBottom: '20px' }}>Klik tombol di bawah untuk membuat kelompok baru</p>
           <button className="btn-add-group" onClick={() => setShowModal(true)}>
             <i className="fas fa-plus"></i> Tambah Kelompok
