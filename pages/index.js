@@ -161,7 +161,9 @@ export default function Home() {
           --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Poppins', sans-serif; background: var(--bg-gradient); min-height: 100vh; padding: 40px 20px; color: #1f2937; }
+        html { min-height: 100%; background: var(--bg-gradient); }
+        body { font-family: 'Poppins', sans-serif; background: transparent; min-height: 100vh; min-height: 100dvh; padding: 40px 20px; color: #1f2937; }
+        .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; }
         .container { max-width: 800px; margin: 0 auto; }
         header { text-align: center; color: white; margin-bottom: 40px; }
         header h1 { font-size: 2.5rem; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
@@ -194,7 +196,7 @@ export default function Home() {
         .suggestion-item { padding: 10px 15px; cursor: pointer; border-bottom: 1px solid #f3f4f6; }
         .suggestion-item:last-child { border-bottom: none; }
         .suggestion-item:hover { background: #f3f4f6; }
-        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 1000; }
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 1000; }
         .modal-overlay.active { display: flex; }
         .modal-content { background: white; padding: 30px; border-radius: 16px; width: 90%; max-width: 400px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); animation: slideUp 0.3s ease; }
         .modal-content h2 { margin-bottom: 20px; color: #1f2937; }
