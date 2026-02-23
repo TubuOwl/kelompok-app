@@ -166,7 +166,8 @@ export default function Home() {
         .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; }
         .container { max-width: 800px; margin: 0 auto; }
         header { text-align: center; color: white; margin-bottom: 40px; }
-        header h1 { font-size: 2.5rem; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.2); white-space: nowrap; }
+        @media (max-width: 480px) { header h1 { font-size: 1.8rem; } }
         .btn-add-group { background: white; color: var(--primary); border: none; padding: 12px 24px; border-radius: 30px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.2s, box-shadow 0.2s; display: inline-flex; align-items: center; gap: 8px; font-family: inherit; font-size: 1rem; }
         .btn-add-group:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
         #group-list { display: grid; gap: 20px; }
